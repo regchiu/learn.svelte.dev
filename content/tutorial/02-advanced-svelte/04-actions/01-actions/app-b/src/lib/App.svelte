@@ -15,6 +15,8 @@
 	{#if showMenu}
 		<div
 			class="modal-background"
+			role="menu"
+			tabindex="-1"
 			on:click|self={() => showMenu = false}
 			on:keydown={(e) => {
 				if (e.key === 'Escape') showMenu = false;
